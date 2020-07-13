@@ -1,0 +1,48 @@
+@import "required/fonts";
+@import "required/reset";
+// Append some custom reset after this file
+@import "required/reset_custom";
+@import "includes/base_components";
+
+// CV
+// CSS variables are initialised by JavaScript
+
+// ---------- Printing
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@page
+// https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
+@page {
+  margin: 8mm 1cm;
+  size: A4 portrait;
+
+  @top-left-corner {
+    content: "";
+  }
+  @top-left {
+    content: "";
+  }
+  @top-center {
+    content: "";
+  }
+  @top-right {
+    content: "";
+  }
+  @top-right-corner {
+    content: "";
+  }
+  @bottom-left-corner {
+    content: "";
+  }
+  @bottom-left {
+    content: "";
+  }
+  @bottom-center {
+    content: "";
+  }
+  @bottom-right {
+    content: "";
+  }
+  @bottom-right-corner {
+    content: "";
+  }
+}
