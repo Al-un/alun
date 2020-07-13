@@ -14,7 +14,7 @@
 
       <div>
         <cv-link v-if="edu.organisation.url" :url="edu.organisation.url">{{ edu.organisation.name }}</cv-link>
-        <span v-else>{{ experience.organisation.name }}</span>
+        <span v-else>{{ edu.organisation.name }}</span>
       </div>
 
       <div>
