@@ -1,6 +1,6 @@
-# CV
+# About
 
-My CV stuff with experimentations:
+Stuffed with experimentations:
 
 - Vue.js composition API
 - CSS Print
