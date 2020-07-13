@@ -3,7 +3,7 @@
     <div class="content">
       <p>
         {{ "footer.code-hosted" | i18n }}
-        <cv-link url="https://github.com/Al-un/alun-homepage">Github</cv-link>
+        <cv-link url="https://github.com/Al-un/alun-cv">Github</cv-link>
         {{ "footer.code-deployed" | i18n }}
         <cv-link url="https://surge.sh/">Surge.sh</cv-link>.
       </p>
