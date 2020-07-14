@@ -12,9 +12,11 @@
       "social.online-cv" | i18n
     }}</cv-link>
 
-    <cv-link class="pdf-cv" :url="pdfResumeLink" download="Resume.pdf">{{
-      "social.pdf-cv" | i18n
-    }}</cv-link>
+    <cv-link
+      class="pdf-cv"
+      url="https://al-un.s3.eu-west-3.amazonaws.com/cv/Resume.pdf"
+      >{{ "social.pdf-cv" | i18n }}</cv-link
+    >
   </div>
 </template>
 
@@ -23,10 +25,8 @@ import { defineComponent } from "@vue/composition-api";
 
 import CvLink from "./cv-link.vue";
 import { CvSocialSection } from "@/models";
-import Resume from "@/assets/Resume.pdf";
 
 interface Props {
-  pdfResumeLink: string;
   social: CvSocialSection;
 }
 
@@ -34,7 +34,6 @@ export default defineComponent({
   name: "cv-social",
   components: { CvLink },
   props: {
-    pdfResumeLink: { type: String, default: Resume },
     social: { type: Object, required: true },
   },
 

@@ -21,18 +21,4 @@ module.exports = {
     themeColor: "#009688",
     workboxPluginMode: "GenerateSW",
   },
-  configureWebpack: {
-    module: {
-      rules: [
-        {
-          test: /\.(pdf)(\?.*)?$/,
-          use: [
-            {
-              loader: "file-loader",
-            },
-          ],
-        },
-      ],
-    },
-  },
 };
