@@ -55,7 +55,7 @@ export const fetchMessage = (
   dictionaries: { [key: string]: I18nDictionary },
   lang: string,
   input: string | I18nDictionary,
-  ...args: (string | number)[]
+  args: (string | number)[]
 ): string => {
   let message: string;
 
@@ -83,7 +83,7 @@ export const fetchMessage = (
 
   // Handle placeholders
   for (let i = 0; i < args.length; i++) {
-    message = message.replace(`{${i}}`, args[i]);
+    message = message.replace(`{${i}}`, args[i].toString());
   }
 
   return message;
