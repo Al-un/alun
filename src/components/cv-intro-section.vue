@@ -27,12 +27,12 @@ export default defineComponent({
   name: "cv-intro-section",
   components: { CvContact, CvIdentity, CvLink, CvSection, CvSocial },
   props: {
-    profile: { type: Object, required: true }
+    profile: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

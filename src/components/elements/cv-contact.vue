@@ -32,12 +32,12 @@ export default defineComponent({
   name: "cv-intro-section",
   components: { CvLink },
   props: {
-    info: { type: Object, required: true }
+    info: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

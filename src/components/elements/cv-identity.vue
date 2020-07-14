@@ -17,12 +17,12 @@ interface Props {
 export default defineComponent({
   name: "cv-intro-section",
   props: {
-    profile: { type: Object, required: true }
+    profile: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

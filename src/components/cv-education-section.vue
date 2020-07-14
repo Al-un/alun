@@ -1,5 +1,9 @@
 <template>
-  <cv-section :section="educations" class="al-cv-educations" title-md-icon="school">
+  <cv-section
+    :section="educations"
+    class="al-cv-educations"
+    title-md-icon="school"
+  >
     <!-- <cv-experience
       v-for="(xp, idx) in educations.content"
       :key="`al-cv-edu-${idx}`"
@@ -13,7 +17,9 @@
       <h2>{{ edu.title | i18n }}</h2>
 
       <div>
-        <cv-link v-if="edu.organisation.url" :url="edu.organisation.url">{{ edu.organisation.name }}</cv-link>
+        <cv-link v-if="edu.organisation.url" :url="edu.organisation.url">{{
+          edu.organisation.name
+        }}</cv-link>
         <span v-else>{{ edu.organisation.name }}</span>
       </div>
 
@@ -41,12 +47,12 @@ export default defineComponent({
   name: "cv-education-section",
   components: { CvLink, CvSection },
   props: {
-    educations: { type: Object, required: true }
+    educations: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

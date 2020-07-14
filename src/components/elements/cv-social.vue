@@ -11,6 +11,10 @@
     <cv-link class="online-cv" url="https://cv.al-un.fr">{{
       "social.online-cv" | i18n
     }}</cv-link>
+
+    <cv-link class="pdf-cv" :url="pdfResumeLink" download="Resume.pdf">{{
+      "social.pdf-cv" | i18n
+    }}</cv-link>
   </div>
 </template>
 
@@ -19,8 +23,10 @@ import { defineComponent } from "@vue/composition-api";
 
 import CvLink from "./cv-link.vue";
 import { CvSocialSection } from "@/models";
+import Resume from "@/assets/Resume.pdf";
 
 interface Props {
+  pdfResumeLink: string;
   social: CvSocialSection;
 }
 
@@ -28,12 +34,13 @@ export default defineComponent({
   name: "cv-social",
   components: { CvLink },
   props: {
-    social: { type: Object, required: true }
+    pdfResumeLink: { type: String, default: Resume },
+    social: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 
@@ -100,6 +107,10 @@ export default defineComponent({
     .cv-link {
       &.online-cv {
         display: inline-block;
+      }
+
+      &.pdf-cv {
+        display: none;
       }
     }
   }

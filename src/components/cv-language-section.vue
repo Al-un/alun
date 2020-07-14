@@ -30,12 +30,12 @@ export default defineComponent({
   name: "cv-language-section",
   components: { CvSection },
   props: {
-    languages: { type: Object, required: true }
+    languages: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

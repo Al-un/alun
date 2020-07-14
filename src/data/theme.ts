@@ -22,7 +22,7 @@ export const CV_THEMES_WEB: CvThemeSet = {
     "--al-cv-base-size": "1rem",
     "--al-cv-font-size-m": "1rem",
     "--al-cv-font-family-title": "'Fira Mono', monospace",
-    "--al-cv-font-family-text": "'Open Sans', sans-serif"
+    "--al-cv-font-family-text": "'Open Sans', sans-serif",
   },
   [CV_THEME_NAMES[1]]: {
     "--al-cv-color-primary": "#1976D2", // Blue 700
@@ -39,7 +39,7 @@ export const CV_THEMES_WEB: CvThemeSet = {
     "--al-cv-base-size": "1rem",
     "--al-cv-font-size-m": "1rem",
     "--al-cv-font-family-title": "'Source Code Pro', monospace",
-    "--al-cv-font-family-text": "'Roboto', sans-serif"
+    "--al-cv-font-family-text": "'Roboto', sans-serif",
   },
   [CV_THEME_NAMES[2]]: {
     "--al-cv-color-primary": "#B2FF59", // Green A200
@@ -56,7 +56,7 @@ export const CV_THEMES_WEB: CvThemeSet = {
     "--al-cv-base-size": "0.75rem",
     "--al-cv-font-size-m": "1rem",
     "--al-cv-font-family-title": "'Fira Mono', monospace",
-    "--al-cv-font-family-text": "'Source Code Pro', monospace"
+    "--al-cv-font-family-text": "'Source Code Pro', monospace",
   },
   [CV_THEME_NAMES[3]]: {
     "--al-cv-color-primary": "#26A69A", // Teal 400
@@ -73,8 +73,8 @@ export const CV_THEMES_WEB: CvThemeSet = {
     "--al-cv-base-size": "1rem",
     "--al-cv-font-size-m": "1rem",
     "--al-cv-font-family-title": "'Fira Mono', monospace",
-    "--al-cv-font-family-text": "'Open Sans', sans-serif"
-  }
+    "--al-cv-font-family-text": "'Open Sans', sans-serif",
+  },
 };
 
 /**
@@ -93,11 +93,11 @@ export const CV_THEMES_PRINT: CvThemeSet = {
     "--al-cv-color-on-primary": "#ECEFF1", // Blue-gray 50
     "--al-cv-color-on-secondary": "#000000",
     "--al-cv-base-size": "0.8rem",
-    "--al-cv-font-size-m": "9pt"
+    "--al-cv-font-size-m": "9pt",
   },
   [CV_THEME_NAMES[1]]: {
     "--al-cv-base-size": "0.8rem",
-    "--al-cv-font-size-m": "10pt"
+    "--al-cv-font-size-m": "10pt",
   },
   [CV_THEME_NAMES[2]]: {
     "--al-cv-color-primary": "#CDDC39", // Lime 500
@@ -116,6 +116,6 @@ export const CV_THEMES_PRINT: CvThemeSet = {
   },
   [CV_THEME_NAMES[3]]: {
     "--al-cv-base-size": "0.8rem",
-    "--al-cv-font-size-m": "10pt"
-  }
+    "--al-cv-font-size-m": "10pt",
+  },
 };

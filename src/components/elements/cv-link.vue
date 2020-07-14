@@ -1,5 +1,11 @@
 <template>
-  <a class="cv-link" :href="url" target="_blank" rel="noopener noreferrer">
+  <a
+    class="cv-link"
+    :href="url"
+    target="_blank"
+    rel="noopener noreferrer"
+    v-bind="attrs"
+  >
     <img v-if="img" :src="img" />
     <span v-if="mdIcon" class="material-icons icon">{{ mdIcon }}</span>
 

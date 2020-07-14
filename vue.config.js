@@ -12,13 +12,27 @@ module.exports = {
   parallel: 1,
   css: {
     loaderOptions: {
-      sass: { prependData: `@import "~@/styles/_core.scss";` }
-    }
+      sass: { prependData: `@import "~@/styles/_core.scss";` },
+    },
   },
   // https://cli.vuejs.org/core-plugins/pwa.html#configuration
   pwa: {
     name: "Al-un",
     themeColor: "#009688",
-    workboxPluginMode: "GenerateSW"
-  }
+    workboxPluginMode: "GenerateSW",
+  },
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.(pdf)(\?.*)?$/,
+          use: [
+            {
+              loader: "file-loader",
+            },
+          ],
+        },
+      ],
+    },
+  },
 };

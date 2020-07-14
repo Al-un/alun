@@ -21,12 +21,12 @@ interface Props {
 export default defineComponent({
   name: "cv-skill-bullet",
   props: {
-    skill: { type: Object, required: true }
+    skill: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

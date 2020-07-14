@@ -9,7 +9,7 @@ import {
   DFLT_LANG_LOADER,
   DFLT_LANGS,
   loadDictionary,
-  fetchMessage
+  fetchMessage,
 } from "./utils";
 
 /**
@@ -37,7 +37,7 @@ const Plugin: I18nPlugin = {
     this.langLoader = options.langLoader || DFLT_LANG_LOADER;
 
     const allSources = options.sources || {};
-    Object.keys(allSources).forEach(lang => {
+    Object.keys(allSources).forEach((lang) => {
       const sources = allSources[lang];
       this.dictionaries[lang] = loadDictionary(sources);
     });
@@ -46,14 +46,14 @@ const Plugin: I18nPlugin = {
 
     const loadMessage = (
       input: string | I18nDictionary,
-      ...args: any[]
+      ...args: (string | number)[]
     ): string => {
       const currentLang = this.langLoader();
       return fetchMessage(this.dictionaries, currentLang, input, args);
     };
 
     Vue.filter("i18n", loadMessage);
-  }
+  },
 };
 
 export default Plugin;

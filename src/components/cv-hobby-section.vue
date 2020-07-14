@@ -1,10 +1,15 @@
 <template>
-  <cv-section :section="hobbies" class="al-cv-hobbies" title-md-icon="directions_bike">
+  <cv-section
+    :section="hobbies"
+    class="al-cv-hobbies"
+    title-md-icon="directions_bike"
+  >
     <span
       v-for="(hobby, idx) in hobbies.content"
       :key="`cv-hobby-${idx}`"
       class="al-cv-hobby"
-    >{{ hobby.name | i18n }}</span>
+      >{{ hobby.name | i18n }}</span
+    >
   </cv-section>
 </template>
 
@@ -22,12 +27,12 @@ export default defineComponent({
   name: "cv-hobby-section",
   components: { CvSection },
   props: {
-    hobbies: { type: Object, required: true }
+    hobbies: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

@@ -3,6 +3,7 @@ const msgs: { [key: string]: string } = {
   "header.theme": "Theme",
   "header.print": "Print",
   "social.online-cv": "Online CV: https://cv.al-un.fr",
+  "social.pdf-cv": "PDF version",
   "footer.code-hosted": "Code is hosted on",
   "footer.code-deployed": "and deployed on",
   "footer.code-tested":

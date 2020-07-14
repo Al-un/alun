@@ -38,17 +38,17 @@ export default defineComponent({
   name: "cv-skill-group",
   components: { CvSkillBattery, CvSkillBullet },
   props: {
-    skillGroup: { type: Object, required: true }
+    skillGroup: { type: Object, required: true },
   },
 
   setup() {
     return {
       state: {
         interest: { limit: 4 },
-        level: { max: 5 }
-      }
+        level: { max: 5 },
+      },
     };
-  }
+  },
 });
 </script>
 

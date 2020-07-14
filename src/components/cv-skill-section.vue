@@ -25,12 +25,12 @@ export default defineComponent({
   name: "cv-skill-section",
   components: { CvSection, CvSkillGroup },
   props: {
-    skills: { type: Object, required: true }
+    skills: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

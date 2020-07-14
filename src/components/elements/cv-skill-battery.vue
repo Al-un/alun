@@ -26,12 +26,12 @@ export default defineComponent({
   props: {
     skill: { type: Object, required: true },
     interestLimit: { type: Number, required: true },
-    levelMax: { type: Number, required: true }
+    levelMax: { type: Number, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
 

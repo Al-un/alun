@@ -20,7 +20,7 @@ const flattenI18nJsonDictionary = (
 ): { [key: string]: string } => {
   const flatten: { [key: string]: string } = {};
 
-  Object.keys(jsonDict).forEach(key => {
+  Object.keys(jsonDict).forEach((key) => {
     const val = jsonDict[key];
     // Value is a string: return it
     if (typeof val === "string") {
@@ -29,7 +29,7 @@ const flattenI18nJsonDictionary = (
     // Value is an object: re-flatten
     else {
       const flattenSubLevel = flattenI18nJsonDictionary(val);
-      Object.keys(flattenSubLevel).forEach(childKey => {
+      Object.keys(flattenSubLevel).forEach((childKey) => {
         flatten[`${key}.${childKey}`] = flattenSubLevel[childKey];
       });
     }
@@ -55,7 +55,7 @@ export const fetchMessage = (
   dictionaries: { [key: string]: I18nDictionary },
   lang: string,
   input: string | I18nDictionary,
-  ...args: any[]
+  ...args: (string | number)[]
 ): string => {
   let message: string;
 

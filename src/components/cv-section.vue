@@ -15,8 +15,9 @@
 <script lang="ts">
 import { defineComponent, reactive, computed } from "@vue/composition-api";
 
-import { CvSection, Languages } from "@/models";
-import { getLanguage } from "@/utils";
+import { CvSection } from "@/models";
+// import { CvSection, Languages } from "@/models";
+// import { getLanguage } from "@/utils";
 
 import BaseText from "@/components/base/base-text";
 

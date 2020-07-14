@@ -27,11 +27,11 @@ export default defineComponent({
   name: "cv-experience-section",
   components: { CvExperience, CvSection },
   props: {
-    experiences: { type: Object, required: true }
+    experiences: { type: Object, required: true },
   },
 
   setup() {
     return {};
-  }
+  },
 });
 </script>
