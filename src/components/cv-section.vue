@@ -71,6 +71,7 @@ export default defineComponent({
   &:focus {
     .section-title {
       color: var(--al-cv-color-secondary-dark);
+      font-weight: 500;
     }
   }
 }
