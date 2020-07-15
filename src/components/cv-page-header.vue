@@ -14,13 +14,11 @@
           </select>
         </div> -->
 
-        <div class="theme-change">
+        <label class="theme-change">
           <span class="material-icons">invert_colors</span>
-          <label class="text" for="themeToggler"
-            >{{ "header.theme" | i18n }}:</label
-          >
+          <span class="text">{{ "header.theme" | i18n }}:</span>
 
-          <select v-model="state.activeTheme" id="themeToggler">
+          <select v-model="state.activeTheme">
             <option
               v-for="(t, idx) in Object.keys(state.themes)"
               :key="idx"
@@ -29,7 +27,7 @@
               >{{ t }}</option
             >
           </select>
-        </div>
+        </label>
 
         <button
           v-if="state.hasPrint"
@@ -137,7 +135,8 @@ export default defineComponent({
       align-items: stretch;
       // justify-content: stretch;
 
-      & > div {
+      & > div,
+      & > label {
         display: flex;
         flex-direction: row;
         align-items: center;
