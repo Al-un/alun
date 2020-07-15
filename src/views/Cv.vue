@@ -8,7 +8,11 @@
       <cv-separator />
 
       <!-- <cv-section :section="profile.objective" title-md-icon="flight_takeoff" /> -->
-      <cv-section :section="profile.aboutMe" title-md-icon="fingerprint" />
+      <cv-section
+        :section="profile.aboutMe"
+        title-md-icon="fingerprint"
+        class="about-me"
+      />
 
       <cv-skill-section :skills="profile.skills" />
 
@@ -171,6 +175,12 @@ export default defineComponent({
           width: 35%;
         }
       }
+    }
+  }
+
+  .about-me {
+    .section-description {
+      white-space: pre-line;
     }
   }
 }
