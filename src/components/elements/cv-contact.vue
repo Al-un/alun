@@ -79,6 +79,8 @@ export default defineComponent({
     // line-height: multiply(al-cv-font-size-m, 1.2);
 
     .cv-link {
+      padding: 0;
+
       .material-icons {
         font-size: multiply(al-cv-font-size-m, 1.4);
       }

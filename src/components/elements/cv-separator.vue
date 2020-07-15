@@ -29,7 +29,7 @@ export default Vue.extend<{}>({
     // display: none;
 
     // // Horizontal margin matches horizontal padding of .al-cv-section
-    margin: multiply(al-cv-base-size, 1) multiply(al-cv-base-size, 1);
+    margin: multiply(al-cv-base-size, 0.5) multiply(al-cv-base-size, 1);
   }
 }
 </style>
