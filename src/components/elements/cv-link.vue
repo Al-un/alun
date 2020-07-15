@@ -4,9 +4,8 @@
     :href="url"
     target="_blank"
     rel="noopener noreferrer"
-    v-bind="attrs"
   >
-    <img v-if="img" :src="img" />
+    <img v-if="img" :src="img" alt="icon" />
     <span v-if="mdIcon" class="material-icons icon">{{ mdIcon }}</span>
 
     <span class="text"><slot></slot></span>
@@ -17,7 +16,12 @@
 </template>
 
 <script lang="ts">
-import { reactive, computed, defineComponent } from "@vue/composition-api";
+import {
+  reactive,
+  computed,
+  defineComponent,
+  SetupContext,
+} from "@vue/composition-api";
 
 interface Props {
   url: string;
@@ -33,12 +37,13 @@ export default defineComponent({
     mdIcon: { type: String, default: undefined },
   },
 
-  setup(props: Props) {
+  setup(props: Props, ctx: SetupContext) {
     const state = reactive({
       isNewTab: computed(
         () => !props.url.startsWith("mailto") && !props.url.startsWith("tel")
       ),
     });
+
     return { state };
   },
 });

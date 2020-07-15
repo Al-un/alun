@@ -6,7 +6,7 @@
   >
     <template v-for="(lang, idx) in languages.content">
       <div :key="`cv-lang-img-${idx}`" class="lang-icon">
-        <img :src="require(`@/assets/${lang.img}`)" />
+        <img :src="require(`@/assets/${lang.img}`)" alt="flag"/>
       </div>
       <div :key="`cv-lang-${idx}`">{{ lang.level | i18n }}</div>
       <!-- <div :key="`cv-lang-${idx}`">{
