@@ -14,6 +14,7 @@
 
     <cv-link
       class="pdf-cv"
+      :img="iconPdf"
       url="https://al-un.s3.eu-west-3.amazonaws.com/cv/Resume.pdf"
       >{{ "social.pdf-cv" | i18n }}</cv-link
     >
@@ -24,6 +25,7 @@
 import { defineComponent } from "@vue/composition-api";
 
 import CvLink from "./cv-link.vue";
+import IconPdf from "@/assets/wikimedia-pdf-logo.png";
 import { CvSocialSection } from "@/models";
 
 interface Props {
@@ -38,7 +40,9 @@ export default defineComponent({
   },
 
   setup() {
-    return {};
+    return {
+      iconPdf: IconPdf,
+    };
   },
 });
 </script>
