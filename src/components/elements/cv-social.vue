@@ -58,7 +58,7 @@ export default defineComponent({
 
   .cv-link {
     img {
-      width: multiply(al-cv-base-size, 2);
+      // width: multiply(al-cv-base-size, 2);
       height: multiply(al-cv-base-size, 2);
     }
 
