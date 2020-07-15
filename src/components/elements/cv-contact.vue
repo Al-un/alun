@@ -48,11 +48,20 @@ export default defineComponent({
   flex-direction: column;
   align-items: flex-start;
   font-size: multiply(al-cv-font-size-m, 0.8);
+
+  .cv-link {
+    // Lighthouse recommended to have tappable areas of 48px x 48px
+    padding: 6px 0;
+  }
 }
 
 @include for-tablet-portrait-up {
   .contact {
     flex-direction: row;
+
+    .cv-link {
+      padding: 0;
+    }
   }
 }
 

@@ -57,6 +57,11 @@ export default defineComponent({
   margin: multiply(al-cv-base-size, 1) 0px;
 
   .cv-link {
+    img {
+      width: multiply(al-cv-base-size, 2);
+      height: multiply(al-cv-base-size, 2);
+    }
+
     .text {
       display: none;
     }
