@@ -16,9 +16,11 @@
 
         <div class="theme-change">
           <span class="material-icons">invert_colors</span>
-          <span class="text">{{ "header.theme" | i18n }}:</span>
+          <label class="text" for="themeToggler"
+            >{{ "header.theme" | i18n }}:</label
+          >
 
-          <select v-model="state.activeTheme">
+          <select v-model="state.activeTheme" id="themeToggler">
             <option
               v-for="(t, idx) in Object.keys(state.themes)"
               :key="idx"
