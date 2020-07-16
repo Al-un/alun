@@ -89,10 +89,10 @@ export default defineComponent({
       }
 
       if (CV_THEME_NAMES.includes(requestedTheme)) {
-        console.debug(`[CV] Loading theme: <${requestedTheme}>`);
+        // console.debug(`[CV] Loading theme: <${requestedTheme}>`);
         loadTheme(CV_THEMES_WEB[requestedTheme]);
       } else {
-        console.debug(`[CV] Loading default theme`);
+        // console.debug(`[CV] Loading default theme`);
         loadTheme(CV_THEMES_WEB[CV_THEME_DEFAULT]);
       }
 

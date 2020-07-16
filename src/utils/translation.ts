@@ -11,7 +11,7 @@ export const translate = (input: TranslationInput): string | string[] => {
 
   // Just in case...
   if (input === undefined) {
-    console.trace(`Attempted to translated an undefined resource`);
+    // console.trace(`Attempted to translated an undefined resource`);
     return "##UNDEFINED##";
   }
 

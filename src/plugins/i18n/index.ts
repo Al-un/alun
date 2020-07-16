@@ -42,7 +42,7 @@ const Plugin: I18nPlugin = {
       this.dictionaries[lang] = loadDictionary(sources);
     });
 
-    console.debug(`[I18nPlugin] Loaded dictionaries`, this.dictionaries);
+    // console.debug(`[I18nPlugin] Loaded dictionaries`, this.dictionaries);
 
     const loadMessage = (
       input: string | I18nDictionary,
