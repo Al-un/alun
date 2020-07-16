@@ -9,25 +9,19 @@
           <cv-link
             v-if="experience.organisation.url"
             :url="experience.organisation.url"
-            >{{ experience.organisation.name }}</cv-link
-          >
+          >{{ experience.organisation.name }}</cv-link>
           <span v-else>{{ experience.organisation.name }}</span>
         </span>
       </div>
 
       <div>
         <span class="exp-location">{{ experience.location | i18n }}</span>
-        <span class="exp-date">
-          {{ experience.date.start | i18n }} -
-          {{ experience.date.end | i18n }}
-        </span>
+        <span class="exp-date">{{ experience.date.start | i18n }} – {{ experience.date.end | i18n }}</span>
       </div>
     </header>
 
     <main>
-      <p class="experience-description">
-        {{ experience.description | i18n }}
-      </p>
+      <p class="experience-description">{{ experience.description | i18n }}</p>
     </main>
 
     <footer>
@@ -109,7 +103,7 @@ export default defineComponent({
   .exp-location {
     border-right: 1px solid var(--al-cv-color-primary);
     padding-right: multiply(al-cv-base-size, 0.5);
-    margin-right: multiply(al-cv-base-size, 0.25);
+    margin-right: multiply(al-cv-base-size, 0.5);
   }
 
   .exp-date {
